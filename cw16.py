@@ -1,3 +1,9 @@
-a = float(input("podaj liczbe a\n"))
+liczba1 = float(input("podaj liczbe\n"))
 
-print("podana liczba zawiera się w przedziale od 5 do 15:", (a>=5 and a<=15))
+if liczba1>=5:
+    if liczba1<=15:
+        print("podana liczba jest mniejsza od 15 i wieksza od 5")
+    else:
+        print("podana liczba nie jest z przedzialu od 5 do 15")
+else:
+    print("podana liczba nie jest z przedzialu od 5 do 15")
