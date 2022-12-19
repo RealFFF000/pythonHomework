@@ -7,3 +7,4 @@ if liczba1>=5:
         print("podana liczba nie jest z przedzialu od 5 do 15")
 else:
     print("podana liczba nie jest z przedzialu od 5 do 15")
+   	
