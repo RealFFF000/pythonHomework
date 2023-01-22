@@ -6,4 +6,4 @@ def pole(a,b,c):
     else:
         print("ten trojkat nie istnieje")
 
-pole(input(),input(),input())
+pole(int(input()),int(input()),int(input()))
