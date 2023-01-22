@@ -1,9 +1,14 @@
-a = int(input("podaj liczbe a \n"))
-b = int(input("podaj liczbe b \n"))
-d = []
-for c in range(a,b+1):
-    print(c,end=" ")
-    d.append(c)
-for c in range(a,b+1):
-    print(d[b-c],end=" ")
+iloscMalp = int(input("podaj liczbe ludzi: \n"))
+cena = 0
+for osoba in range(0,iloscMalp):
+    wiek = int(input("podaj wiek kolejnego członka grupy: \n"))
+    if wiek<3:
+        dodac = 0
+    elif wiek>=3 and wiek<=12:
+        dodac = 10
+    else:
+        dodac = 15
+    print("cena za tego czlonka:",dodac)
+    cena+=dodac
 
+print("suma za całą grupę: ",cena)
