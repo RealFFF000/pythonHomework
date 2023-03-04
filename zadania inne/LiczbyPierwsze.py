@@ -1,4 +1,5 @@
 liczba = int(input("podaj liczbe "))
+
 pierwsza = True
 for a in range(2,liczba):
     if liczba%a == 0:
