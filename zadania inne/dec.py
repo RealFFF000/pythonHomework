@@ -1,6 +1,7 @@
 liczba = int(input("podaj liczbę dziesiętną "))
 binarka = []
 
+
 while True:
     if liczba == 1:
         binarka.append(liczba%2)
