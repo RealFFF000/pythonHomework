@@ -1,9 +1,4 @@
 #Znajdź jak największą liczbę mniejszą od 2 000 000 000, która jest iloczynem dwóch liczb pierwszych.
-def czypierwsza(n):
-    for i in range(2,int(n**0.5)+1):
-        if n%i==0:
-            return False 
-    return True
 def skladnikiPierwsze(n):
     i = 2
     skladniki = []
@@ -20,5 +15,7 @@ def skladnikiPierwsze(n):
 liczba = 2000000000
 while True:
     for a in range(liczba, 0, -1):
-        if skladnikiPierwsze(a).__len__() == 2:
-            print(a,skladnikiPierwsze(a))
+        skladniki = skladnikiPierwsze(a)
+        if skladniki.__len__() == 2:
+            print(skladniki[0]*skladniki[1],"=",skladniki[0],"*",skladniki[1])
+            czekator = input("wciśnij enter aby poznać kolejną liczbę")
